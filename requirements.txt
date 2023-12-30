@@ -4,4 +4,4 @@ plotly==5.18.0
 plotly==5.9.0
 streamlit==1.22.0
 streamlit==1.29.0
-~lotly==5.9.0
+
