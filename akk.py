@@ -4,7 +4,7 @@ import plotly.express as px
 import streamlit as st
 
 
-st.set_page_config(page_title="Tip Dashboard",layout="wide")
+#st.set_page_config(page_title="Tip Dashboard",layout="wide")
 df=pd.read_csv("tips.csv")
 st.sidebar.header("Tips DashBoard")
 st.sidebar.image("images.png")
