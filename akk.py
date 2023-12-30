@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
-#import plotly.express as px
+import plotly.express as px
 import streamlit as st
 
 
-#st.set_page_config(page_title="Tip Dashboard",layout="wide")
+st.set_page_config(page_title="Tip Dashboard",layout="wide")
 df=pd.read_csv("tips.csv")
 st.sidebar.header("Tips DashBoard")
 st.sidebar.image("images.png")
@@ -24,7 +24,7 @@ a1.metric("Max Tota bill",df["total_bill"].max(),delta_color="inverse")
 a2.metric("Min Tota bill",df["total_bill"].min(),delta_color="inverse")
 a3.metric("Max tip",df["tip"].max(),delta_color="inverse")
 a4.metric("Min tip",df["tip"].min(),delta_color="inverse")
-'''
+
 st.subheader("Total Bill Vs Tips")
 fig1=px.scatter(data_frame=df,x="total_bill",y="tip",size=Num_1,color=Cat_1,facet_col=col_filter,facet_row=row_filter)
 st.plotly_chart(fig1,use_container_width=True)
@@ -44,4 +44,4 @@ with b3:
     st.text("Day Vs Tips")
     fig4=px.pie(data_frame=df,names="day",values="tip",hole=0.4,color=Cat_1)
     st.plotly_chart(fig4,use_container_width=True)
-'''
+
